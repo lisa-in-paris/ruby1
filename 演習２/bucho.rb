@@ -5,7 +5,7 @@ class Bucho < Shain
     puts'だらけて起立した。'
   end
 
-  def culculate_salary(kihonkyu)
+  def calculate_salary(kihonkyu)
     kihonkyu * 3
   end
 end

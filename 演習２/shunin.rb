@@ -4,7 +4,8 @@ class Shunin < Shain
   def standup
     puts'丁寧に起立した。'
   end
-  def culculate_salary(kihonkyu)
+
+  def calculate_salary(kihonkyu)
     kihonkyu *2+1
   end
 
