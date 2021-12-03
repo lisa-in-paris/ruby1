@@ -7,4 +7,8 @@ describe Torishimariyaku do
     expect(bucho.calculate_salary(100)).to eq 
     402
   end
+
+  it '取締役はふんぞり返って立ち上がる' do
+    expect(torishimariyaku.standup).to eq '取締役はふんぞり返って立ち上がる'
+  end
 end

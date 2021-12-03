@@ -17,3 +17,5 @@ shain = Shunin.new
 shain.standup
 puts 'my salary is #{shain.calculate_salary(100)}yen'
 
+shain = Torishimariyaku.new
+puts 'my salary is #{shain.calculate_salary(100)}yen'

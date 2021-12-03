@@ -2,7 +2,7 @@ require_relative './shain.rb'
 
 class Torishimariyaku < Shain
   def standup
-    puts'なんとなく起立した。'
+    puts'取締役はふんぞり返って立ち上がる'
   end
 
   def calculate_salary(kihonkyu)
