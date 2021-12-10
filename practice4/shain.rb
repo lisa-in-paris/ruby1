@@ -47,8 +47,17 @@ class Senmu < Shain
     '専務はゆっくり立った。'
   end
 
-  def kihon
-    @kihonkyu * 4+2
-  end
+  module Salary
+    def calculate_salary
+      kihon + teate
+    end
+
+    def kihon
+      @kihonkyu
+    end
+
+    def teate
+      0
+    end
 
 end
