@@ -1,6 +1,6 @@
 require_relative 'bucho'
 
-descrive Bucho do
+describe Bucho do
   let(:bucho) { .new }
 
   example '部長の給料の３倍。基本給が100なら給料も300' do
