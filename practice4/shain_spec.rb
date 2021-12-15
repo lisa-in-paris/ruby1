@@ -1,9 +1,19 @@
-require_relative 'tanto'
+require_relative 'shain'
 
-describe Tanto do
-  let(:tanto) { Tanto.new }
+desscribe Shain do
+  let(:shain)
 
-  example '担当の給料は基本給と一緒。基本給が100なら給料も100' do
-    expect(tanto.calculate_salary(100)).to eq 100
+  example '社員はとりあえず起立します。' do
+    expect(shain.work).to eq '社員はとりあえず起立する。'
+  end
+
+  example '担当は慌てて起立します' do
+    shain.gyomu = TantoGyomu.new
+    expect(shain.work).to eq '担当は慌てて起立しました。'
+  end
+
+  example '主任は素早く起立します' do
+    shain.gyomu = ShuninGyomu.new
+    expect(shain.work).to eq '主任が素早くたちました。'
   end
 end
